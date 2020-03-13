@@ -8,7 +8,8 @@
     <meta name="keywords" content="This,Month,Rocks,Inspire,Do,Something">
     <meta name="description" content="This Month Rocks.">
     <meta charset="utf-8">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<div id="content" class="text-xl">{% block content %}{% endblock %}</div>
+    <div id="content" class="relative overflow-hidden mb-8">{% block content %}{% endblock %}</div>
 </body>

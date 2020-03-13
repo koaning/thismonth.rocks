@@ -1,8 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
   <ul>
-  {% for idea in ideas %}
-    <li>{{ idea.name }}</></li>
-  {% endfor %}
+    <div class="flex flex-wrap">
+    {% for idea in ideas %}
+      <div class="w-1/6 rounded overflow-hidden p-4">
+        <img class="w-full p-8" src="/img/{{ idea.img }}">
+        <div class="px-6 py-4">
+          <div class="font-bold text-l mb-2">{{ idea.name }}</div>
+          <p class="text-gray-600 text-base">
+            {{ idea.appendix }}
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          {% for tag in idea['tags'] %}
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{{tag}}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
   </ul>
 {% endblock %}
