@@ -14,7 +14,7 @@ def main():
 @click.command()
 def to_json():
     """It's easy being green."""
-    d = yaml.load(pathlib.Path("ideas.yml").read_text(), Loader=yaml.FullLoader)
+    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in pathlib.Path("ideas").glob("*.yml")]
     print(json.dumps(d))
 
 
@@ -22,7 +22,7 @@ def to_json():
 def run_jinja():
     """It's not easy being red."""
     from jinja2 import Environment, select_autoescape, FileSystemLoader
-    d = yaml.load(pathlib.Path("ideas.yml").read_text(), Loader=yaml.FullLoader)
+    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in pathlib.Path("ideas").glob("*.yml")]
     print(d)
     env = Environment(
         loader=FileSystemLoader('src'),
