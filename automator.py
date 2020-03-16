@@ -34,8 +34,9 @@ def run_jinja():
         f.write(env.get_template('index.html').render(ideas=d))
     
     for p in pathlib.Path("src/img").glob("*.svg"):
-        filename = p.parts[-1]
-        copyfile(p, pathlib.Path(f"public/img/{filename}"))
+        copyfile(p, pathlib.Path(f"public/img/{p.parts[-1]}"))
+    for p in pathlib.Path("src/img").glob("*.png"):
+        copyfile(p, pathlib.Path(f"public/img/{p.parts[-1]}"))
 
 
 main.add_command(run_jinja)
