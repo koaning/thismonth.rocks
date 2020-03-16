@@ -455,6 +455,10 @@ img {
   padding: 4rem;
 }
 
+.p-32 {
+  padding: 8rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
