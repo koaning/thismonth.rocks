@@ -1,9 +1,10 @@
 import json
 import pathlib
+from shutil import copyfile
 
 import yaml
 import click
-
+from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 @click.group()
 def main():
@@ -14,15 +15,16 @@ def main():
 @click.command()
 def to_json():
     """It's easy being green."""
-    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in pathlib.Path("ideas").glob("*.yml")]
+    glob = pathlib.Path("src/ideas").glob("*.yml")
+    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in glob]
     print(json.dumps(d))
 
 
 @click.command()
 def run_jinja():
     """It's not easy being red."""
-    from jinja2 import Environment, select_autoescape, FileSystemLoader
-    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in pathlib.Path("ideas").glob("*.yml")]
+    glob = pathlib.Path("src/ideas").glob("*.yml")
+    d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in glob]
     print(d)
     env = Environment(
         loader=FileSystemLoader('src'),
@@ -30,6 +32,10 @@ def run_jinja():
     )
     with open('public/index.html', 'w') as f:
         f.write(env.get_template('index.html').render(ideas=d))
+    
+    for p in pathlib.Path("src/img").glob("*.svg"):
+        filename = p.parts[-1]
+        copyfile(p, pathlib.Path(f"public/img/{filename}"))
 
 
 main.add_command(run_jinja)
