@@ -1,6 +1,10 @@
+<img src="src/img/two-thumbs.png" width=125 height=125 align="right">
+
 # thismonth.rocks
 
 A collaborative motivational website to encourage you to do something special this month.
+
+## How To Contribute 
 
 If you want to contribute, feel free to add a file to the `src/ideas` folder and add a PR. The icons will be handled by the maintainer and are retreived from [the nounproject](https://thenounproject.com/). 
 
