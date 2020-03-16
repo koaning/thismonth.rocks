@@ -4,10 +4,9 @@ install:
 
 website:
 	python automator.py run-jinja
-	npx tailwindcss build styles.css -o public/all.css
-	npx purgecss --css public/*.css --content src/*.html > public/style.css
-	npx uglifycss --ugly-comments public/style.css > public/style-min.css
-	rm public/all.css public/style.css
+	npx tailwindcss build styles.css -o src/all.css
+	npx purgecss --css src/all.css --content src/*.html --out public
+	npx uglifycss --ugly-comments public/all.css > public/style.css
 
 clean:
 	rm -rm public/*

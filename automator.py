@@ -17,7 +17,6 @@ def to_json():
     """It's easy being green."""
     glob = pathlib.Path("src/ideas").glob("*.yml")
     d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in glob]
-    print(json.dumps(d))
 
 
 @click.command()
@@ -25,7 +24,6 @@ def run_jinja():
     """It's not easy being red."""
     glob = pathlib.Path("src/ideas").glob("*.yml")
     d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in glob]
-    print(d)
     env = Environment(
         loader=FileSystemLoader('src'),
         autoescape=select_autoescape(['html', 'xml'])
