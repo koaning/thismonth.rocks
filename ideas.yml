@@ -1,33 +1,39 @@
-- name: Make Your Own Ketchup
+- name: Make Your Own Sauce
   img: ketchup.svg
   tags:
     - cooking
   appendix: |
     Making your own ketchup is a super rewarding experience.
+    BBQ-Sauce too! 
 - name: Pick Up a Ukelele
   img: ukelele.svg
   tags:
     - hobby
   appendix: |
-    Here's some amazing places to get started.
+    It tends to be one of the cheapest, but also easiest to 
+    learn musical instruments out there. 
 - name: Participate in a Photoshop Battle
   img: photoshop.svg
   tags:
     - digital
   appendix: |
-    On reddit there's a competition.
+    On reddit there's a competition that's often humerous.
+    Also a great excuse to learn.
 - name: Go Camping in Nature
   img: camping.svg
   tags:
     - nature
   appendix: |
-    It's a great excuse to go outdoors.
+    It's a great excuse to go outdoors. 
+    Leave the ipad at home though.
 - name: Breathing Exercises
   img: breathe.svg
   tags:
     - health
   appendix: |
-    Buy a straw and breathe through it.
+    Buy a straw and breathe through it. It gives you
+    a calm heart rate. These exercises really have 
+    an effect.
 - name: Train for a Running Competition
   img: running.svg
   tags:
@@ -39,16 +45,18 @@
   tags:
     - cooking
   appendix: |
-    There's the Santa Run. But also the Utrecht one.
+    It really forces you to learn to cook with spices.
 - name: Perfect a Pizza
   img: pizza.svg
   tags:
     - cooking
   appendix: |
-    Pick a day of the week. This day, is pizza day.
+    Pick a day of the week. This day, is pizza day. 
+    It is your mission to find the perfect recipe for you.
 - name: Measure Electricity
   img: electricity.svg
   tags:
     - home
   appendix: |
-    Measure the energy vampires
+    Measure and defeat the energy vampires. 
+    Save some money too.
