@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2">
+  <path transform="scale(1.5625)" d="m56 40c0 4-6 4-6 0s6-4 6 0"/>
+  <path transform="scale(1.5625)" d="m45 47v3h4v8h8v-8h4v-3c0-2.21-1.79-4-4-4h-8c-2.21 0-4 1.79-4 4z"/>
+  <path transform="scale(1.5625)" d="m57 50v-4"/>
+  <path transform="scale(1.5625)" d="m49 50v-4"/>
+  <path transform="scale(1.5625)" d="m53 58v-7"/>
+  <path transform="scale(1.5625)" d="m5 3h56v30h-56z"/>
+  <path transform="scale(1.5625)" d="m9 7h48v22h-48z"/>
+  <path transform="scale(1.5625)" d="m18 16l-9 6h14l1.285-1.285z"/>
+  <path transform="scale(1.5625)" d="m23 22l10-10 9 10z"/>
+  <path transform="scale(1.5625)" d="m49 14l-7.89 7.0125 0.89 0.9875h15z"/>
+  <path transform="scale(1.5625)" d="m23 22l10-10 9 10z"/>
+  <path transform="scale(1.5625)" d="m35 41c0 4-6 4-6 0s6-4 6 0"/>
+  <path transform="scale(1.5625)" d="m24 48v3h4v8h8v-8h4v-3c0-2.21-1.79-4-4-4h-8c-2.21 0-4 1.79-4 4z"/>
+  <path transform="scale(1.5625)" d="m36 51v-4"/>
+  <path transform="scale(1.5625)" d="m28 51v-4"/>
+  <path transform="scale(1.5625)" d="m32 59v-7"/>
+  <path transform="scale(1.5625)" d="m11.03 47.648l0.97-0.6475 2 2v-3c0-1.105-0.895-2-2-2h-5c-1.105 0-2 0.895-2 2l-1 8-1 7h4l2-7 3 7h4l-1.11-6.11-4.165-4.165c-0.8925-0.8925-0.745-2.3775 0.305-3.0775z"/>
+  <path transform="scale(1.5625)" d="m12 41c0 4-6 4-6 0s6-4 6 0"/>
+  <path transform="scale(1.5625)" d="m12 47l6 6-3 2-4.275-4.275c-0.8925-0.8925-0.745-2.3775 0.305-3.0775z"/>
+ </g>
+</svg>
