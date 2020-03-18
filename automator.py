@@ -17,6 +17,7 @@ def to_json():
     """It's easy being green."""
     glob = pathlib.Path("src/ideas").glob("*.yml")
     d = [yaml.load(p.read_text(), Loader=yaml.FullLoader) for p in glob]
+    pathlib.Path("public/tips.json").write_text(json.dumps(d))
 
 
 @click.command()
@@ -38,7 +39,7 @@ def run_jinja():
 
 
 main.add_command(run_jinja)
-
+main.add_command(to_json)
 
 if __name__ == "__main__":
     main()
