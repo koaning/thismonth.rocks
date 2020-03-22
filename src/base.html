@@ -19,6 +19,20 @@
     <script async defer data-domain="thismonth.rocks" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
+    <div class="flex flex-wrap">
+        <div class="w-1/1 rounded overflow-hidden p-4">
+            <span class="text-6xl font-bold"><a href="/index.html"><img src="/img/two-thumbs.png" width=100 height=100/></a>
+            This Month Rocks! 
+            </span>
+            {% if tag %}
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-4xl font-semibold text-gray-700 mr-2">#{{tag}}</span>
+            {% endif %}
+            {% if not tag %}
+            <p class="text-normal">Do something special this month.</p>
+            <p class="text-normal">A website with inspirational ideas. Feel free to <a class="font-bold" href="https://github.com/koaning/thismonth.rocks">collaborate</a>.</p>
+            {% endif %} 
+        </div>
+    </div>
     <div id="content" class="relative overflow-hidden mb-8">{% block content %}{% endblock %}</div>
     <div class="flex flex-wrap">
         <div class="w-1/1 rounded overflow-hidden p-4">

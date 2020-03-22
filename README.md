@@ -4,6 +4,8 @@
 
 A collaborative motivational website to encourage you to do something special this month.
 
+![](readme-gif.gif)
+
 ## API 
 
 The website exposes the ideas as a json blob. You can see it [here](https://thismonth.rocks/tips.json) or download it via; 
@@ -14,7 +16,7 @@ wget https://thismonth.rocks/tips.json
 
 ## How To Contribute 
 
-If you want to contribute, feel free to add a file to the `src/ideas` folder and add a PR. The icons will be handled by the maintainer and are retreived from [the nounproject](https://thenounproject.com/). 
+If you want to contribute, feel free to add (or update!) a file to the `src/ideas` folder and add a PR. The icons will be handled by the maintainer and are retreived from [the nounproject](https://thenounproject.com/). 
 
 When submitting an idea, consider these few points; 
 
