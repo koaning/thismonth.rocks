@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+  <style>
+      h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: black;
+      }
+  </style>
+  <ul>
+    <div class="flex flex-wrap">
+      <div class="rounded overflow-hidden p-4">
+        <span class="text-6xl font-bold">
+            <img class="w-8" src="/img/icons/{{ idea.icon }}">
+          {{idea.name}}
+        </span>
+      </div>
+      <div class="rounded overflow-hidden p-4">
+        <span class="text-6xl font-bold">
+            {% for tag in idea.tags %}
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2">#{{tag}}</span>
+            {% endfor %}
+        </span>
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+        <a href="/ideas/{{idea.name}}/index.html">
+            
+        </a>
+        <div class="p-1 text-gray-800">
+            {{idea.appendix | safe}}
+        </div>
+    </div>
+  </ul>
+{% endblock %}

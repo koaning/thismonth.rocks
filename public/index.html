@@ -19,1287 +19,3225 @@
     <script async defer data-domain="thismonth.rocks" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
+    <div class="flex flex-wrap">
+        <div class="w-1/1 rounded overflow-hidden p-4">
+            <span class="text-6xl font-bold"><a href="/index.html"><img src="/img/two-thumbs.png" width=100 height=100/></a>
+            This Month Rocks! 
+            </span>
+            
+            
+            <p class="text-normal">Do something special this month.</p>
+            <p class="text-normal">A website with inspirational ideas. Feel free to <a class="font-bold" href="https://github.com/koaning/thismonth.rocks">collaborate</a>.</p>
+             
+        </div>
+    </div>
     <div id="content" class="relative overflow-hidden mb-8">
-  <ul>
-    <div class="flex flex-wrap">
-      <div class="w-1/1 rounded overflow-hidden p-4">
-        <span class="text-6xl font-bold"><a href="/index.html"><img src="/img/two-thumbs.png" width=100 height=100/></a>
-          This Month Rocks! 
-        </span>
+<div class="flex flex-wrap">
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="language">
+        Learn a Language
+      </p>
+      <div class="px-6 py-4">
         
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
         
-          <p class="text-normal">A website with inspirational ideas.</p>
-          <p class="text-normal">Do something special this month.</p>
-          <p class="text-normal">Maybe <a class="font-bold" href="https://github.com/koaning/thismonth.rocks">contribute</a> some.</p>
-         
       </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="language" src="/img/icons/language.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        The basics are fine! It may also make a holiday much more enjoyable.
+      </p>
     </div>
-    <div class="flex flex-wrap">
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="language">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Sock Puppets.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Sock Puppets</p>
-          </a>
-          <a href="/ideas/Sock Puppets.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/sock-puppet.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You probably have some old socks lying around. Don&#39;t 
-throw them away, make the most beautiful sock puppet with the family.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/family.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#family</span>
-            </a>
-          
-            <a href="/crafts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
-            </a>
-          
-        </div>
-      </div>
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
     
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Perfect a Pizza.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Perfect a Pizza</p>
-          </a>
-          <a href="/ideas/Perfect a Pizza.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pizza.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Pick a day of the week. This day, is pizza day. 
-It is your mission to find the perfect recipe for you.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Write Thoughts.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Write Thoughts</p>
-          </a>
-          <a href="/ideas/Write Thoughts.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/write.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            It may be a diary or a notebook, either way it&#39;s a good habbit.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Make Your Own Sauce.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Make Your Own Sauce</p>
-          </a>
-          <a href="/ideas/Make Your Own Sauce.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/ketchup.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Making your own ketchup is a super rewarding experience.
-BBQ-Sauce too! 
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Breathing Exercises.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Breathing Exercises</p>
-          </a>
-          <a href="/ideas/Breathing Exercises.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/breathe.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Buy a straw and breathe through it. It gives you
-a calm heart rate. These exercises really have 
-an effect.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Museum Virtual Tour.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Museum Virtual Tour</p>
-          </a>
-          <a href="/ideas/Museum Virtual Tour.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/museum.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You can visit some of the best collections in the 
-world online, such as the Louvre Museum. Google it!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/No Purchases.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">No Purchases</p>
-          </a>
-          <a href="/ideas/No Purchases.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/nomoney.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You&#39;re allowed to prepare for this one. Force yourself to plan ahead and don&#39;t buy anything for a full week. 
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Yoga.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Yoga</p>
-          </a>
-          <a href="/ideas/Yoga.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/yoga.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            It&#39;s easy to get started with and could be a great stress relief. Try it.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Meditate.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Meditate</p>
-          </a>
-          <a href="/ideas/Meditate.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/meditate.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You&#39;ve probably told yourself you should.
-Give it a chance this month!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Use the Oven.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Use the Oven</p>
-          </a>
-          <a href="/ideas/Use the Oven.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/oven.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Let&#39;s use that thing! Learn new recipes for that oven!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Pick Up a Ukelele.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Pick Up a Ukelele</p>
-          </a>
-          <a href="/ideas/Pick Up a Ukelele.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/ukelele.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            It tends to be one of the cheapest, but also easiest to 
-learn musical instruments out there. 
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/hobby.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#hobby</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Fresh Pasta.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Fresh Pasta</p>
-          </a>
-          <a href="/ideas/Fresh Pasta.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pasta.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Learn to make fresh pasta. Hard work. But rewarding!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Participate in a Photoshop Battle.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Participate in a Photoshop Battle</p>
-          </a>
-          <a href="/ideas/Participate in a Photoshop Battle.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/photoshop.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            On reddit there&#39;s a competition that&#39;s often humerous.
-Also a great excuse to learn.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/digital.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Donate.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Donate</p>
-          </a>
-          <a href="/ideas/Donate.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/donate.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Go through your old clothes, books, and household items, and set
-aside a box to donate to friends or charity. 
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/arts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Rube Goldberg.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Rube Goldberg</p>
-          </a>
-          <a href="/ideas/Rube Goldberg.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/machine.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Construct your own Rube-Goldberg machine. 
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-            <a href="/crafts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Repair Clothes.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Repair Clothes</p>
-          </a>
-          <a href="/ideas/Repair Clothes.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/repair-clothes.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Learn to make small repairs to clothes. It saves money and it might save your favorite t-shirt.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Magic Cards Tricks.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Magic Cards Tricks</p>
-          </a>
-          <a href="/ideas/Magic Cards Tricks.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/cardmagic.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            There&#39;s a lot of cool card tricks to learn. 
-Just don&#39;t overdo the party tricks.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Spring Cleaning.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Spring Cleaning</p>
-          </a>
-          <a href="/ideas/Spring Cleaning.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/clean.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Let&#39;s be honest, it might be overdue. It is super rewarding to be in a clean house though!
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Make a Mashup.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Make a Mashup</p>
-          </a>
-          <a href="/ideas/Make a Mashup.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/dj.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            If you have a Mac, you have garageband. Heard two songs that&#39;d 
-sound good together? You&#39;re the DJ.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/digital.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
-            </a>
-          
-            <a href="/arts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Train for a Running Competition.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Train for a Running Competition</p>
-          </a>
-          <a href="/ideas/Train for a Running Competition.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/running.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            There&#39;s the Santa Run. But also the Utrecht one.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/New Hair.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">New Hair</p>
-          </a>
-          <a href="/ideas/New Hair.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/haircut.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Mix it up! Suprise yourself and tell the barber to give you a new style. 
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Pancake Art.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Pancake Art</p>
-          </a>
-          <a href="/ideas/Pancake Art.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pancake-art.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Doodle a face and then eat it. Combine creativity with food. Cool for kids too.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-            <a href="/arts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
-            </a>
-          
-            <a href="/kids.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#kids</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Childhood Books.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Childhood Books</p>
-          </a>
-          <a href="/ideas/Childhood Books.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/stories.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Read the books you loved when you were a kid. Odds are there&#39;s audiobooks for them too.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-            <a href="/kids.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#kids</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Learn to Say Thanks.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Learn to Say Thanks</p>
-          </a>
-          <a href="/ideas/Learn to Say Thanks.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/thankyou.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            ... in 50 languages! You&#39;ll always have a 
-happy waiter where-ever you&#39;ll go.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Bounce the Ball.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Bounce the Ball</p>
-          </a>
-          <a href="/ideas/Bounce the Ball.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/bounce.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You&#39;ve seen the youtube videos with long chains of ping-pong balls bouncing. Set your own record!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Learn a Language.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Learn a Language</p>
-          </a>
-          <a href="/ideas/Learn a Language.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/language.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            The basics are fine! It may also make a holiday much more enjoyable.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/No Plastic.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">No Plastic</p>
-          </a>
-          <a href="/ideas/No Plastic.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/noplastic.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Don&#39;t buy anything this month if it will cause plastic waste.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Paint on a Canvas.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Paint on a Canvas</p>
-          </a>
-          <a href="/ideas/Paint on a Canvas.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/vangogh.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Unleash your inner Picasso (or maybe you are more like van Gogh?),
-and paint the world&#39;s (or your kitchen&#39;s) next masterpiece.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/craft.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#craft</span>
-            </a>
-          
-            <a href="/arts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Awesome Omelet.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Awesome Omelet</p>
-          </a>
-          <a href="/ideas/Awesome Omelet.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/omelet.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            There&#39;s a lot of ways to cook an egg. 
-Spend some time perfecting a recipe for you.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/World Digital Library.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">World Digital Library</p>
-          </a>
-          <a href="/ideas/World Digital Library.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/library.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Google it! You can search 19,147 items about 193 countries between 8000 BCE and 2000.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Learn to Draw.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Learn to Draw</p>
-          </a>
-          <a href="/ideas/Learn to Draw.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/drawing.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Watch a few youtube videos. Try, try, and try again. 
-Try drawing the same thing in different styles!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/arts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Virtual Card Games.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Virtual Card Games</p>
-          </a>
-          <a href="/ideas/Virtual Card Games.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/virtual-card-games.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Do it with friends! Check out http://playingcards.io/. They have cards against humanity too! 
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Contribute to Open Source.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Contribute to Open Source</p>
-          </a>
-          <a href="/ideas/Contribute to Open Source.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/opensource.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            You can start by adding an idea to this repository!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/digital.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Trade Clothes.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Trade Clothes</p>
-          </a>
-          <a href="/ideas/Trade Clothes.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/trade-clothes.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Help eachother to new clothing without spending a dime. Make it last!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/self.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#self</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Try Knitting.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Try Knitting</p>
-          </a>
-          <a href="/ideas/Try Knitting.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/knitting.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            It&#39;s relaxing and it gives you clothing! Scarves are easy to start with, but warm socks are amazing too!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/digital.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Survive as a Vegetarian.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Survive as a Vegetarian</p>
-          </a>
-          <a href="/ideas/Survive as a Vegetarian.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/vegetarian.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Do it for a full month! It really forces you to learn to cook with spices.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/New Tricks.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">New Tricks</p>
-          </a>
-          <a href="/ideas/New Tricks.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/new-tricks.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Teach your pet new tricks this month! You might even
-try to teach your cat a new trick.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/family.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#family</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Five Spices.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Five Spices</p>
-          </a>
-          <a href="/ideas/Five Spices.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/spices.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Blindfold yourself and pick 5 random spices at the supermarket. Figure out a dish for each.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Furniture Socks.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Furniture Socks</p>
-          </a>
-          <a href="/ideas/Furniture Socks.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/furniture-socks.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Try and make socks for chair- and table-legs. It&#39;s much 
-easier to play with and it adds color to the house.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-            <a href="/crafts.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Vegan Week.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Vegan Week</p>
-          </a>
-          <a href="/ideas/Vegan Week.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/vegan.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Do the proper research and prepare for a vegan week. Challenge your cooking!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Pomodoro.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Pomodoro</p>
-          </a>
-          <a href="/ideas/Pomodoro.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pomodoro.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Give the pomodoro way of working a try.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Measure Electricity.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Measure Electricity</p>
-          </a>
-          <a href="/ideas/Measure Electricity.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/electricity.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Measure and defeat the energy vampires. 
-Save some money too.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Money Jar.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Money Jar</p>
-          </a>
-          <a href="/ideas/Money Jar.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/moneyjar.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Turn this into a challenge. While keeping it healthy, how long can you last $50 in a supermarket?
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Start Composting.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Start Composting</p>
-          </a>
-          <a href="/ideas/Start Composting.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/compost.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            If you have a garden you can turn your trash into good soil. Add worms and you&#39;ll have less waste!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Pickle and Ferment.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Pickle and Ferment</p>
-          </a>
-          <a href="/ideas/Pickle and Ferment.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pickle.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Learn how to pickle and ferment. So many great flavours and so many options!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Play with Sensors.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Play with Sensors</p>
-          </a>
-          <a href="/ideas/Play with Sensors.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/raspberry.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Buy a raspberry pi with some sensors and start measuring the world.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Quit Social Media.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Quit Social Media</p>
-          </a>
-          <a href="/ideas/Quit Social Media.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/quit.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Even if it is just for a few days. At least remove it from your phone.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Banana Pancakes.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Banana Pancakes</p>
-          </a>
-          <a href="/ideas/Banana Pancakes.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pancakes.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Treat yourself every sunday this month! Banana pancakes for the win!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/cooking.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Bake Bread.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Bake Bread</p>
-          </a>
-          <a href="/ideas/Bake Bread.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/bread.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            It can be very rewarding. It&#39;ll make your kitchen smell nice too!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Volunteer.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Volunteer</p>
-          </a>
-          <a href="/ideas/Volunteer.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/volunteer.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            There&#39;s a lot of places that appreciate help. 
-Volunteer for something you care about.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Train Pushups.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Train Pushups</p>
-          </a>
-          <a href="/ideas/Train Pushups.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/pushup.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            How many can you do right now? Can you triple it by the end of the month?
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/health.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Listen to Podcasts.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Listen to Podcasts</p>
-          </a>
-          <a href="/ideas/Listen to Podcasts.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/podcast.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Tune down the music and listen to podcasts while you&#39;re in 
-transit. You might learn something.
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Clean Keyboard.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Clean Keyboard</p>
-          </a>
-          <a href="/ideas/Clean Keyboard.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/keyboard.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Take a swab before and after and put it in a petry dish to measurement. Next, make your fingers happy! 
-Wipe down those keys and clear the gunk that&#39;s underneath them!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/home.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Lego Challenge.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Lego Challenge</p>
-          </a>
-          <a href="/ideas/Lego Challenge.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/lego.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Buy a box of legos and build it ... without using the instructions manual. Throw it away!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-        <div class="px-6 py-4">
-          <a href="/ideas/Celebrate Boardgames.html">
-            <p class="font-bold sm:text-xl bg-gray-300 rounded border-t-2 border-gray-500 lg:text-l mb-2 pt-2 pb-2 text-center">Celebrate Boardgames</p>
-          </a>
-          <a href="/ideas/Celebrate Boardgames.html">
-            <img class="w-full md:p-16 lg:p-8" src="/img/icons/boardgames.svg">
-          </a>
-          <p class="text-gray-600 text-base lg:visible">
-            Turn the tv off. Monday evenings this month is now boardgame night!
-
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          
-            <a href="/mind.html">
-              <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-            </a>
-          
-        </div>
-      </div>
-    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
     </div>
-  </ul>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/language.svg">
+          <span class="text-4xl font-bold">Learn a Language</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pickle">
+        Pickle and Ferment
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pickle" src="/img/icons/pickle.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Learn how to pickle and ferment. So many great flavours and so many options!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pickle">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pickle.svg">
+          <span class="text-4xl font-bold">Pickle and Ferment</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="omelet">
+        Awesome Omelet
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="omelet" src="/img/icons/omelet.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        There&#39;s a lot of ways to cook an egg. Spend some time perfecting a recipe for you.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="omelet">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/omelet.svg">
+          <span class="text-4xl font-bold">Awesome Omelet</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="spices">
+        Five Spices
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="spices" src="/img/icons/spices.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Blindfold yourself and pick 5 random spices at the supermarket. Figure out a dish for each.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="spices">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/spices.svg">
+          <span class="text-4xl font-bold">Five Spices</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pomodoro">
+        Pomodoro
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pomodoro" src="/img/icons/pomodoro.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Give the pomodoro way of working a try.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pomodoro">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pomodoro.svg">
+          <span class="text-4xl font-bold">Pomodoro</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="machine">
+        Rube Goldberg
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+          <a href="/crafts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="machine" src="/img/icons/machine.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Construct your own Rube-Goldberg machine. 
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="machine">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/machine.svg">
+          <span class="text-4xl font-bold">Rube Goldberg</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="breathe">
+        Breathing Exercises
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="breathe" src="/img/icons/breathe.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Buy a straw and breathe through it. It gives youa calm heart rate. These exercises really have an effect.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="breathe">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/breathe.svg">
+          <span class="text-4xl font-bold">Breathing Exercises</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="dj">
+        Make a Mashup
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/digital.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
+          </a>
+        
+          <a href="/arts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="dj" src="/img/icons/dj.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        If you have a Mac, you have garageband. Heard two songs that&#39;d sound good together? You&#39;re the DJ.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="dj">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/dj.svg">
+          <span class="text-4xl font-bold">Make a Mashup</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="knitting">
+        Try Knitting
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/digital.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="knitting" src="/img/icons/knitting.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        It&#39;s relaxing and it gives you clothing! Scarves are easy to start with, but warm socks are amazing too!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="knitting">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/knitting.svg">
+          <span class="text-4xl font-bold">Try Knitting</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="bread">
+        Bake Bread
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="bread" src="/img/icons/bread.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        It can be very rewarding. It&#39;ll make your kitchen smell nice too!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="bread">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/bread.svg">
+          <span class="text-4xl font-bold">Bake Bread</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="bounce">
+        Bounce the Ball
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="bounce" src="/img/icons/bounce.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You&#39;ve seen the youtube videos with long chains of ping-pong balls bouncing. Set your own record!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="bounce">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/bounce.svg">
+          <span class="text-4xl font-bold">Bounce the Ball</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="noplastic">
+        No Plastic
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="noplastic" src="/img/icons/noplastic.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Don&#39;t buy anything this month if it will cause plastic waste.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="noplastic">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/noplastic.svg">
+          <span class="text-4xl font-bold">No Plastic</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="compost">
+        Start Composting
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="compost" src="/img/icons/compost.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        If you have a garden you can turn your trash into good soil. Add worms and you&#39;ll have less waste!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="compost">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/compost.svg">
+          <span class="text-4xl font-bold">Start Composting</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="sock-puppet">
+        Sock Puppets
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/family.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#family</span>
+          </a>
+        
+          <a href="/crafts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="sock-puppet" src="/img/icons/sock-puppet.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You probably have some old socks lying around. Don&#39;t throw them away, make the most beautiful sock puppet with the family.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="sock-puppet">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/sock-puppet.svg">
+          <span class="text-4xl font-bold">Sock Puppets</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="running">
+        Running Competition
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="running" src="/img/icons/running.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        There&#39;s the Santa Run. But also the Utrecht one.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="running">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/running.svg">
+          <span class="text-4xl font-bold">Running Competition</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="vegan">
+        Vegan Week
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="vegan" src="/img/icons/vegan.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Do the proper research and prepare for a vegan week. Challenge your cooking!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="vegan">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/vegan.svg">
+          <span class="text-4xl font-bold">Vegan Week</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="ukelele">
+        Pick Up a Ukelele
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/hobby.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#hobby</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="ukelele" src="/img/icons/ukelele.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        It tends to be one of the cheapest, but also easiest to learn musical instruments out there. 
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="ukelele">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/ukelele.svg">
+          <span class="text-4xl font-bold">Pick Up a Ukelele</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="boardgames">
+        Celebrate Boardgames
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="boardgames" src="/img/icons/boardgames.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Turn the tv off. Monday evenings this month is now boardgame night!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="boardgames">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/boardgames.svg">
+          <span class="text-4xl font-bold">Celebrate Boardgames</span>
+          </div>
+      </div>
+      <div class="p-8">
+        <p>There are a lot of board- and cardgames that are well worth your time.</p>
+<br>
+<p>If you'd like to try collaborative games you might like <a href="https://boardgamegeek.com/boardgame/191925/bandido">Bandito</a> or 
+<a href="https://boardgamegeek.com/boardgame/30549/pandemic">Pandemic</a>.</p>
+<p>If you'd like to get started with two player games then you might like 
+<a href="https://boardgamegeek.com/boardgame/194655/santorini">Santorini</a> or
+<a href="https://boardgamegeek.com/boardgame/163412/patchwork">Patchwork</a>.</p>
+<p>For large groups you might consider <a href="https://boardgamegeek.com/boardgame/13/catan">Catan</a>.</p>
+<br>
+<p>If possible, consider buying them from a local toy-store.</p>
+
+        
+          <p class="text-gray-600">If you want to commit to this, consider writing yourself an email via <a href="https://dearme.email">dearme.email</a>.</p>
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="oven">
+        Use the Oven
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="oven" src="/img/icons/oven.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Let&#39;s use that thing! Learn new recipes for that oven!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="oven">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/oven.svg">
+          <span class="text-4xl font-bold">Use the Oven</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="new-tricks">
+        New Tricks
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/family.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#family</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="new-tricks" src="/img/icons/new-tricks.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Teach your pet new tricks this month! You might eventry to teach your cat a new trick.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="new-tricks">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/new-tricks.svg">
+          <span class="text-4xl font-bold">New Tricks</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pushup">
+        Train Pushups
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pushup" src="/img/icons/pushup.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        How many can you do right now? Can you triple it by the end of the month?
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pushup">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pushup.svg">
+          <span class="text-4xl font-bold">Train Pushups</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pasta">
+        Fresh Pasta
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pasta" src="/img/icons/pasta.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Learn to make fresh pasta. Hard work. But rewarding!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pasta">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pasta.svg">
+          <span class="text-4xl font-bold">Fresh Pasta</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pancakes">
+        Banana Pancakes
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pancakes" src="/img/icons/pancakes.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Treat yourself every sunday this month! Banana pancakes for the win!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pancakes">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pancakes.svg">
+          <span class="text-4xl font-bold">Banana Pancakes</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="furniture-socks">
+        Furniture Socks
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+          <a href="/crafts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="furniture-socks" src="/img/icons/furniture-socks.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Try and make socks for chair- and table-legs. It&#39;s much easier to play with and it adds color to the house.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="furniture-socks">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/furniture-socks.svg">
+          <span class="text-4xl font-bold">Furniture Socks</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="lego">
+        Lego Challenge
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="lego" src="/img/icons/lego.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Buy a box of legos and build it ... without using the instructions manual. Throw it away!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="lego">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/lego.svg">
+          <span class="text-4xl font-bold">Lego Challenge</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="photoshop">
+        Photoshop Battle
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/digital.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="photoshop" src="/img/icons/photoshop.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        On reddit there&#39;s a photoshop battle that&#39;s often humerous. Also a great excuse to learn.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="photoshop">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/photoshop.svg">
+          <span class="text-4xl font-bold">Photoshop Battle</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="museum">
+        Museum Virtual Tour
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="museum" src="/img/icons/museum.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You can visit some of the best collections in the world online, such as the Louvre Museum. Google it!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="museum">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/museum.svg">
+          <span class="text-4xl font-bold">Museum Virtual Tour</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="raspberry">
+        Play with Sensors
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="raspberry" src="/img/icons/raspberry.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Buy a raspberry pi with some sensors and start measuring the world.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="raspberry">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/raspberry.svg">
+          <span class="text-4xl font-bold">Play with Sensors</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="moneyjar">
+        Money Jar
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="moneyjar" src="/img/icons/moneyjar.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Turn this into a challenge. While keeping it healthy, how long can you last $50 in a supermarket?
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="moneyjar">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/moneyjar.svg">
+          <span class="text-4xl font-bold">Money Jar</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="electricity">
+        Measure Electricity
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="electricity" src="/img/icons/electricity.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Measure and defeat the energy vampires. Save some money too.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="electricity">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/electricity.svg">
+          <span class="text-4xl font-bold">Measure Electricity</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="library">
+        World Digital Library
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="library" src="/img/icons/library.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Google it! You can search 19,147 items about 193 countries between 8000 BCE and 2000.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="library">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/library.svg">
+          <span class="text-4xl font-bold">World Digital Library</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="clean">
+        Spring Cleaning
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="clean" src="/img/icons/clean.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Let&#39;s be honest, it might be overdue. It is super rewarding to be in a clean house though!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="clean">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/clean.svg">
+          <span class="text-4xl font-bold">Spring Cleaning</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="meditate">
+        Meditate
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="meditate" src="/img/icons/meditate.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You&#39;ve probably told yourself you should.Give it a chance this month!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="meditate">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/meditate.svg">
+          <span class="text-4xl font-bold">Meditate</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="repair-clothes">
+        Repair Clothes
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="repair-clothes" src="/img/icons/repair-clothes.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Learn to make small repairs to clothes. It saves money and it might save your favorite t-shirt.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="repair-clothes">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/repair-clothes.svg">
+          <span class="text-4xl font-bold">Repair Clothes</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="write">
+        Write Thoughts
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="write" src="/img/icons/write.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        It may be a diary or a notebook, either way it&#39;s a good habbit.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="write">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/write.svg">
+          <span class="text-4xl font-bold">Write Thoughts</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="podcast">
+        Listen to Podcasts
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="podcast" src="/img/icons/podcast.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Tune down the music and listen to podcasts while you&#39;re in transit. You might learn something.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="podcast">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/podcast.svg">
+          <span class="text-4xl font-bold">Listen to Podcasts</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="yoga">
+        Yoga
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/home.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
+          </a>
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="yoga" src="/img/icons/yoga.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        It&#39;s easy to get started with and could be a great stress relief. Try it.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="yoga">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/yoga.svg">
+          <span class="text-4xl font-bold">Yoga</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="trade-clothes">
+        Trade Clothes
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/self.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#self</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="trade-clothes" src="/img/icons/trade-clothes.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Help eachother to new clothing without spending a dime. Make it last!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="trade-clothes">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/trade-clothes.svg">
+          <span class="text-4xl font-bold">Trade Clothes</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="volunteer">
+        Volunteer
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="volunteer" src="/img/icons/volunteer.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        There&#39;s a lot of places that appreciate help. Volunteer for something you care about.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="volunteer">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/volunteer.svg">
+          <span class="text-4xl font-bold">Volunteer</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="cardmagic">
+        Magic Cards Tricks
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="cardmagic" src="/img/icons/cardmagic.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        There&#39;s a lot of cool card tricks to learn. Just don&#39;t overdo the party tricks.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="cardmagic">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/cardmagic.svg">
+          <span class="text-4xl font-bold">Magic Cards Tricks</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="vegetarian">
+        Survive as a Vegetarian
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="vegetarian" src="/img/icons/vegetarian.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Do it for a full month! It really forces you to learn to cook with spices.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="vegetarian">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/vegetarian.svg">
+          <span class="text-4xl font-bold">Survive as a Vegetarian</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pancake-art">
+        Pancake Art
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+          <a href="/arts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
+          </a>
+        
+          <a href="/kids.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#kids</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pancake-art" src="/img/icons/pancake-art.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Doodle a face and then eat it. Combine creativity with food. Cool for kids too.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pancake-art">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pancake-art.svg">
+          <span class="text-4xl font-bold">Pancake Art</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="opensource">
+        Open Source
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/digital.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="opensource" src="/img/icons/opensource.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You can start contributing to it by adding an idea to this repository!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="opensource">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/opensource.svg">
+          <span class="text-4xl font-bold">Open Source</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="vangogh">
+        Paint on a Canvas
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/craft.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#craft</span>
+          </a>
+        
+          <a href="/arts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="vangogh" src="/img/icons/vangogh.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Unleash your inner Picasso (or maybe you are more like van Gogh?),and paint the world&#39;s (or your kitchen&#39;s) next masterpiece.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="vangogh">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/vangogh.svg">
+          <span class="text-4xl font-bold">Paint on a Canvas</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="ketchup">
+        Make Your Own Sauce
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="ketchup" src="/img/icons/ketchup.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Making your own ketchup is a super rewarding experience.BBQ-Sauce too! 
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="ketchup">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/ketchup.svg">
+          <span class="text-4xl font-bold">Make Your Own Sauce</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="haircut">
+        New Hair
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="haircut" src="/img/icons/haircut.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Mix it up! Suprise yourself and tell the barber to give you a new style. 
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="haircut">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/haircut.svg">
+          <span class="text-4xl font-bold">New Hair</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="quit">
+        Quit Social Media
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="quit" src="/img/icons/quit.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Even if it is just for a few days. At least remove it from your phone.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="quit">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/quit.svg">
+          <span class="text-4xl font-bold">Quit Social Media</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="thankyou">
+        Learn to Say Thanks
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="thankyou" src="/img/icons/thankyou.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        ... in 50 languages! You&#39;ll always have a happy waiter where-ever you&#39;ll go.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="thankyou">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/thankyou.svg">
+          <span class="text-4xl font-bold">Learn to Say Thanks</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="drawing">
+        Learn to Draw
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/arts.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#arts</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="drawing" src="/img/icons/drawing.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Watch a few youtube videos. Try, try, and try again. Try drawing the same thing in different styles!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="drawing">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/drawing.svg">
+          <span class="text-4xl font-bold">Learn to Draw</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="nomoney">
+        No Purchases
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="nomoney" src="/img/icons/nomoney.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        You&#39;re allowed to prepare for this one. Force yourself to plan ahead and don&#39;t buy anything for a full week. 
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="nomoney">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/nomoney.svg">
+          <span class="text-4xl font-bold">No Purchases</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p class="modal-open font-bold sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pizza">
+        Perfect a Pizza
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/cooking.html">
+            <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#cooking</span>
+          </a>
+        
+      </div>
+      <img class="modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="pizza" src="/img/icons/pizza.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Pick a day of the week. This day, is pizza day. It is your mission to find the perfect recipe for you.
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pizza">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">Esc</span>
+    </div>
+
+    <div class="modal-content text-left px-6">
+      <div class="flex items-center">
+          <img class="p-6" width=100 src="/img/icons/pizza.svg">
+          <span class="text-4xl font-bold">Perfect a Pizza</span>
+          </div>
+      </div>
+      <div class="p-8">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+
+<script>
+  var openmodal = document.querySelectorAll('.modal-open')
+  let selectedModalTargetId = ''
+  for (var i = 0; i < openmodal.length; i++) {
+    openmodal[i].addEventListener('click', function(event){
+      selectedModalTargetId = event.target.attributes.getNamedItem('data-target').value
+      event.preventDefault()
+      toggleModal()
+    })
+  }
+
+ const overlay = document.querySelector('.modal-overlay')
+ overlay.addEventListener('click', toggleModal)
+
+ var closemodal = document.querySelectorAll('.modal-close')
+ for (var i = 0; i < closemodal.length; i++) {
+   closemodal[i].addEventListener('click', toggleModal)
+ }
+
+ document.onkeydown = function(evt) {
+   evt = evt || window.event
+   var isEscape = false
+   if ("key" in evt) {
+     isEscape = (evt.key === "Escape" || evt.key === "Esc")
+   } else {
+     isEscape = (evt.keyCode === 27)
+   }
+   if (isEscape && document.body.classList.contains('modal-active')) {
+     toggleModal()
+   }
+ }
+
+ function toggleModal () {
+   if(!selectedModalTargetId) {
+     return
+   }
+   const body = document.querySelector('body')
+   const modal = document.getElementById(selectedModalTargetId)
+   modal.classList.toggle('opacity-0')
+   modal.classList.toggle('pointer-events-none')
+   body.classList.toggle('modal-active')
+ }
+</script>
+</div>
 </div>
     <div class="flex flex-wrap">
         <div class="w-1/1 rounded overflow-hidden p-4">
