@@ -4,7 +4,7 @@
 
 A collaborative motivational website to encourage you to do something special this month.
 
-![](readme-gif.gif)
+![](readme-imgs/readme-gif.gif)
 
 ## API 
 
@@ -39,3 +39,46 @@ When giving context, consider these few points;
 - Don't overdo it. Just give short meaningful places where folks can find out more when they're inspired. 
 - We're here to inspire, not to do marketing or sales pitches. 
 
+## New to Github? 
+
+If you're logged into a github account then these are the steps that you need to follow. 
+
+First you need to navigate to `thismonth.rocks/src/ideas`. You should see a screenshot like below. You can create a new file if you want to add a card to the webpage.
+
+![](readme-imgs/commit-1.png)
+
+But you can also make a change to a card. Say add a desription. In that case ... 
+
+![](readme-imgs/commit-2.png)
+
+And then ... 
+
+![](readme-imgs/commit-3.png)
+
+#### The Editor
+
+Either way, you should now see something of an editor. I've added some text to the document that I saw before.
+
+![](readme-imgs/commit-4.png)
+
+After you've created the changes you'd like to create you can scroll down and click the green button. 
+
+![](readme-imgs/commit-5.png)
+
+#### It's called a PR (Pull Request)
+
+You should now see a screen that looks like this; 
+
+![](readme-imgs/commit-6.png)
+
+This screen looks intimidating, but for now we'll ignore everything except the green button. After clicking it, we need to click it one more time. 
+
+![](readme-imgs/commit-7.png)
+
+#### We Made a Request! 
+
+You just added a "pull request". This means that the maintainer of the project can now have a look at it and consider if the change is good for the project.
+
+![](readme-imgs/commit-8.png)
+
+The idea is that your change is now "in review" once it is deemed good enough, it will be "merged" into the project. 

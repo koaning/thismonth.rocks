@@ -23,4 +23,4 @@ written by the creator.
 
 <br>
 
-If possible, consider buying the book from a local toy-store.
+If possible, consider buying the book from a local book-store.
