@@ -62,18 +62,6 @@ def handle_category_pages(env, ideas):
             click.echo("created page: " + click.style(f"public/{tag}.html", "blue"))
 
 
-def handle_individual_pages(env, ideas):
-    for idea in ideas:
-        if len(idea['appendix']) > 0:
-            print(idea)
-        path = pathlib.Path(f"public/ideas/{idea['icon'].replace('.svg', '')}") 
-        if not path.exists():
-            path.mkdir()
-        with open(path / "index.html", 'w') as f:
-            f.write(env.get_template('idea.html').render(idea=idea))
-        click.echo("created page: " + click.style(f"{path}", "blue"))
-
-
 @click.command()
 def build():
     """build the website"""
@@ -89,7 +77,6 @@ def build():
     handle_json_api()
     handle_images()
     handle_category_pages(env=env, ideas=ideas)
-    handle_individual_pages(env=env, ideas=ideas)
 
 
 main.add_command(build)
