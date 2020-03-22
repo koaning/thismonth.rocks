@@ -82,3 +82,5 @@ You just added a "pull request". This means that the maintainer of the project c
 ![](readme-imgs/commit-8.png)
 
 The idea is that your change is now "in review" once it is deemed good enough, it will be "merged" into the project. 
+
+You can actually see the pull request [here](https://github.com/koaning/thismonth.rocks/pull/14).
