@@ -25,7 +25,7 @@ def load_md(appendix=False):
         md = mistune.create_markdown(escape=False)
         if appendix:
             d['appendix'] = md(fm.content)
-            d['id'] = d['icon'].replace(".svg", "")
+        d['id'] = d['icon'].replace(".svg", "")
         results.append(d)
     return results
 
