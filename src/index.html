@@ -15,7 +15,7 @@
       font-weight: 700;
     }
   </style>
-  <div class="sm:w1/1 md:w-1/2 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
       <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="{{idea.id}}">
         {{ idea.name }}
@@ -27,7 +27,7 @@
           </a>
         {% endfor %}
       </div>
-      <img class="cursor-pointer modal-open w-full p-16 md:p-32 lg:p-8" data-toggle="modal" data-target="{{idea.id}}" src="/img/icons/{{ idea.icon }}">
+      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="{{idea.id}}" src="/img/icons/{{ idea.icon }}">
       <p class="text-gray-600 text-base lg:visible">
         {{ idea.short }}
       </p>
@@ -48,18 +48,20 @@
     <div class="modal-content text-left px-6">
       <div class="flex items-center">
           <img class="p-6" width=100 src="/img/icons/{{ idea.icon }}">
-          <span class="text-4xl font-bold">{{idea.name}}</span>
+          <span class="sm:text-lg md:text-4xl font-bold">{{idea.name}}</span>
           </div>
       </div>
-      <div class="p-8">
+      <div class="px-8 pb-4 text-xs sm:text-base">
         {{idea.appendix | default("There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.", true) | safe}}
         {% if idea.appendix | length > 0%}
-          <p class="text-gray-600">If you want to commit to this, consider writing yourself an email via <a href="https://dearme.email">dearme.email</a>.</p>
+          <p class="text-gray-600 text-xs">If you want to commit, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</p>
         {% endif %}
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+      </div>
+      <div class="px-8 pb-4 text-xs md:text-base">
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
           Close
         </button>
-        <br>
+        <br><br>
       </div>
 
     </div>
