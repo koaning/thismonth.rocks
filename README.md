@@ -41,6 +41,8 @@ When giving context, consider these few points;
 
 ## New to Github? 
 
+There's a small tutorial below but we've also made [a video](https://vimeo.com/399993277).
+
 If you're logged into a github account then these are the steps that you need to follow. 
 
 First you need to navigate to `thismonth.rocks/src/ideas`. You should see a screenshot like below. You can create a new file if you want to add a card to the webpage.
