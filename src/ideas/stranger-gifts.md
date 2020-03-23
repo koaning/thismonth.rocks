@@ -15,6 +15,7 @@ offer all sorts of categories for gift giving and they have a match-making proce
 There's some gems that were given too. There's that time when 
 [Schwarzenegger drew a cat](https://www.redditgifts.com/gallery/secret-santa-2013/gift/secret-santa-revealed/) and
 that time when somebody sent a [fully functional safe](https://www.redditgifts.com/gallery/secret-santa-2014/gift/whats-safe-2/).
+Even [Bill Gates](https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-gift-2014-12) participates.
 
 <br>
 
