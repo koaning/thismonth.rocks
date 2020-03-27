@@ -17,3 +17,6 @@ deploy: website
 	git add . 
 	git commit -m moar-stuff 
 	git push origin master
+
+serve: website
+	python -m http.server 8000 --directory public

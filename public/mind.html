@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>this month rocks - inspire a cool plan</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="keywords" content="This,Month,Rocks,Inspire,Do,Something">
     <meta name="description" content="This Month Rocks.">
     <meta charset="utf-8">
-    <meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <link rel="icon" type="image/png" href="/img/two-thumbs.png">
-    <link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+    
+<meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<link rel="icon" type="image/png" href="/img/two-thumbs.png">
+<link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+
     <!-- <link href="all.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script async defer data-domain="thismonth.rocks" src="https://plausible.io/js/plausible.js"></script>
@@ -48,7 +49,7 @@
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="language">
+      <p id="p-language" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="language">
         Learn a Language
       </p>
       <div class="px-6 py-4">
@@ -68,18 +69,18 @@
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/language.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Learn a Language</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/language.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Learn a Language</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('language')">
+            <span id="t-language" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -95,7 +96,6 @@
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -114,7 +114,7 @@
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="omelet">
+      <p id="p-omelet" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="omelet">
         Awesome Omelet
       </p>
       <div class="px-6 py-4">
@@ -134,18 +134,18 @@
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/omelet.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Awesome Omelet</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/omelet.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Awesome Omelet</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('omelet')">
+            <span id="t-omelet" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -158,7 +158,6 @@
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -177,7 +176,7 @@
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pomodoro">
+      <p id="p-pomodoro" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pomodoro">
         Pomodoro
       </p>
       <div class="px-6 py-4">
@@ -197,18 +196,18 @@
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/pomodoro.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Pomodoro</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/pomodoro.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Pomodoro</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('pomodoro')">
+            <span id="t-pomodoro" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -235,7 +234,6 @@ written by the creator.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -254,7 +252,7 @@ written by the creator.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="bounce">
+      <p id="p-bounce" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="bounce">
         Bounce the Ball
       </p>
       <div class="px-6 py-4">
@@ -274,18 +272,18 @@ written by the creator.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/bounce.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Bounce the Ball</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/bounce.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Bounce the Ball</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('bounce')">
+            <span id="t-bounce" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -302,7 +300,6 @@ demonstrates what is meant. Don't forget to record it!</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -321,7 +318,7 @@ demonstrates what is meant. Don't forget to record it!</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="noplastic">
+      <p id="p-noplastic" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="noplastic">
         No Plastic
       </p>
       <div class="px-6 py-4">
@@ -341,18 +338,18 @@ demonstrates what is meant. Don't forget to record it!</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/noplastic.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">No Plastic</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/noplastic.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">No Plastic</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('noplastic')">
+            <span id="t-noplastic" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -365,7 +362,6 @@ demonstrates what is meant. Don't forget to record it!</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -384,7 +380,7 @@ demonstrates what is meant. Don't forget to record it!</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="stranger-gifts">
+      <p id="p-stranger-gifts" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="stranger-gifts">
         Gift a Stranger
       </p>
       <div class="px-6 py-4">
@@ -404,18 +400,18 @@ demonstrates what is meant. Don't forget to record it!</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/stranger-gifts.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Gift a Stranger</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/stranger-gifts.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Gift a Stranger</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('stranger-gifts')">
+            <span id="t-stranger-gifts" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -440,7 +436,6 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -459,7 +454,7 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="boardgames">
+      <p id="p-boardgames" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="boardgames">
         Celebrate Boardgames
       </p>
       <div class="px-6 py-4">
@@ -479,18 +474,18 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/boardgames.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Celebrate Boardgames</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/boardgames.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Celebrate Boardgames</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('boardgames')">
+            <span id="t-boardgames" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -515,7 +510,6 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -534,7 +528,7 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="lego">
+      <p id="p-lego" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="lego">
         Lego Challenge
       </p>
       <div class="px-6 py-4">
@@ -554,18 +548,18 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/lego.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Lego Challenge</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/lego.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Lego Challenge</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('lego')">
+            <span id="t-lego" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -578,7 +572,6 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -597,7 +590,7 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="museum">
+      <p id="p-museum" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="museum">
         Museum Virtual Tour
       </p>
       <div class="px-6 py-4">
@@ -617,18 +610,18 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/museum.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Museum Virtual Tour</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/museum.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Museum Virtual Tour</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('museum')">
+            <span id="t-museum" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -641,7 +634,6 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -660,7 +652,7 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="raspberry">
+      <p id="p-raspberry" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="raspberry">
         Play with Sensors
       </p>
       <div class="px-6 py-4">
@@ -680,18 +672,18 @@ Even <a href="https://www.businessinsider.com.au/bill-gates-reddit-secret-santa-
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/raspberry.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Play with Sensors</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/raspberry.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Play with Sensors</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('raspberry')">
+            <span id="t-raspberry" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -717,7 +709,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -736,7 +727,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="library">
+      <p id="p-library" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="library">
         World Digital Library
       </p>
       <div class="px-6 py-4">
@@ -756,18 +747,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/library.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">World Digital Library</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/library.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">World Digital Library</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('library')">
+            <span id="t-library" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -780,7 +771,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -799,7 +789,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="meditate">
+      <p id="p-meditate" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="meditate">
         Meditate
       </p>
       <div class="px-6 py-4">
@@ -823,18 +813,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/meditate.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Meditate</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/meditate.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Meditate</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('meditate')">
+            <span id="t-meditate" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -847,7 +837,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -866,7 +855,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="repair-clothes">
+      <p id="p-repair-clothes" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="repair-clothes">
         Repair Clothes
       </p>
       <div class="px-6 py-4">
@@ -886,18 +875,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/repair-clothes.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Repair Clothes</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/repair-clothes.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Repair Clothes</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('repair-clothes')">
+            <span id="t-repair-clothes" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -910,7 +899,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -929,7 +917,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="write">
+      <p id="p-write" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="write">
         Write Thoughts
       </p>
       <div class="px-6 py-4">
@@ -949,18 +937,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/write.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Write Thoughts</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/write.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Write Thoughts</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('write')">
+            <span id="t-write" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -973,7 +961,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -992,7 +979,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="podcast">
+      <p id="p-podcast" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="podcast">
         Listen to Podcasts
       </p>
       <div class="px-6 py-4">
@@ -1012,18 +999,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/podcast.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Listen to Podcasts</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/podcast.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Listen to Podcasts</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('podcast')">
+            <span id="t-podcast" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1036,7 +1023,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1055,7 +1041,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="volunteer">
+      <p id="p-volunteer" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="volunteer">
         Volunteer
       </p>
       <div class="px-6 py-4">
@@ -1075,18 +1061,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/volunteer.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Volunteer</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/volunteer.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Volunteer</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('volunteer')">
+            <span id="t-volunteer" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1099,7 +1085,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1118,7 +1103,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="cardmagic">
+      <p id="p-cardmagic" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="cardmagic">
         Magic Cards Tricks
       </p>
       <div class="px-6 py-4">
@@ -1138,18 +1123,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/cardmagic.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Magic Cards Tricks</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/cardmagic.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Magic Cards Tricks</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('cardmagic')">
+            <span id="t-cardmagic" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1162,7 +1147,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1181,7 +1165,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="haircut">
+      <p id="p-haircut" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="haircut">
         New Hair
       </p>
       <div class="px-6 py-4">
@@ -1201,18 +1185,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/haircut.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">New Hair</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/haircut.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">New Hair</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('haircut')">
+            <span id="t-haircut" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1225,7 +1209,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1244,7 +1227,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="quit">
+      <p id="p-quit" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="quit">
         Quit Social Media
       </p>
       <div class="px-6 py-4">
@@ -1264,18 +1247,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/quit.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Quit Social Media</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/quit.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Quit Social Media</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('quit')">
+            <span id="t-quit" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1288,7 +1271,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1307,7 +1289,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="sign-words">
+      <p id="p-sign-words" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="sign-words">
         Sign Language
       </p>
       <div class="px-6 py-4">
@@ -1328,18 +1310,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/sign-words.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Sign Language</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/sign-words.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Sign Language</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('sign-words')">
+            <span id="t-sign-words" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1352,7 +1334,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1371,7 +1352,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="thankyou">
+      <p id="p-thankyou" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="thankyou">
         Learn to Say Thanks
       </p>
       <div class="px-6 py-4">
@@ -1391,18 +1372,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/thankyou.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Learn to Say Thanks</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/thankyou.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Learn to Say Thanks</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('thankyou')">
+            <span id="t-thankyou" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1415,7 +1396,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1434,7 +1414,7 @@ inspiring tutorials on their website.</p>
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="nomoney">
+      <p id="p-nomoney" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="nomoney">
         No Purchases
       </p>
       <div class="px-6 py-4">
@@ -1454,18 +1434,18 @@ inspiring tutorials on their website.</p>
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/nomoney.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">No Purchases</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/nomoney.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">No Purchases</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('nomoney')">
+            <span id="t-nomoney" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -1478,7 +1458,6 @@ inspiring tutorials on their website.</p>
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -1493,38 +1472,70 @@ inspiring tutorials on their website.</p>
       toggleModal()
     })
   }
+  const overlay = document.querySelector('.modal-overlay')
+  overlay.addEventListener('click', toggleModal)
 
- const overlay = document.querySelector('.modal-overlay')
- overlay.addEventListener('click', toggleModal)
+  var closemodal = document.querySelectorAll('.modal-close')
+  for (var i = 0; i < closemodal.length; i++) {
+    closemodal[i].addEventListener('click', toggleModal)
+  }
 
- var closemodal = document.querySelectorAll('.modal-close')
- for (var i = 0; i < closemodal.length; i++) {
-   closemodal[i].addEventListener('click', toggleModal)
- }
+  document.onkeydown = function(evt) {
+    evt = evt || window.event
+    var isEscape = false
+    if ("key" in evt) {
+      isEscape = (evt.key === "Escape" || evt.key === "Esc")
+    } else {
+      isEscape = (evt.keyCode === 27)
+    }
+    if (isEscape && document.body.classList.contains('modal-active')) {
+      toggleModal()
+    }
+  }
 
- document.onkeydown = function(evt) {
-   evt = evt || window.event
-   var isEscape = false
-   if ("key" in evt) {
-     isEscape = (evt.key === "Escape" || evt.key === "Esc")
-   } else {
-     isEscape = (evt.keyCode === 27)
-   }
-   if (isEscape && document.body.classList.contains('modal-active')) {
-     toggleModal()
-   }
- }
+  function toggleModal () {
+    if(!selectedModalTargetId) {
+      return
+    }
+    const body = document.querySelector('body')
+    const modal = document.getElementById(selectedModalTargetId)
+    modal.classList.toggle('opacity-0')
+    modal.classList.toggle('pointer-events-none')
+    body.classList.toggle('modal-active')
+  }
 
- function toggleModal () {
-   if(!selectedModalTargetId) {
-     return
-   }
-   const body = document.querySelector('body')
-   const modal = document.getElementById(selectedModalTargetId)
-   modal.classList.toggle('opacity-0')
-   modal.classList.toggle('pointer-events-none')
-   body.classList.toggle('modal-active')
- }
+  function copylink(id){
+    var url = "https://thismonth.rocks/idea/" + id + ".html";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    console.log(url);
+  }
+
+  const copyToClipboard = str => {
+    var url = "https://thismonth.rocks/idea/" + str + ".html";
+    const el = document.createElement('textarea');  // Create a <textarea> element
+    el.value = url;                                 // Set its value to the string that you want copied
+    el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+    el.style.position = 'absolute';                 
+    el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+    document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+    const selected =            
+      document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+        ? document.getSelection().getRangeAt(0)     // Store selection if found
+        : false;                                    // Mark as false to know no selection existed before
+    el.select();                                    // Select the <textarea> content
+    document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+    document.body.removeChild(el);                  // Remove the <textarea> element
+    if (selected) {                                 // If a selection existed before copying
+      document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+      document.getSelection().addRange(selected);   // Restore the original selection
+    }
+    document.getElementById("t-" + str).innerHTML = "URL copied to clipboard."
+  };
+
+ 
 </script>
 </div>
 </div>

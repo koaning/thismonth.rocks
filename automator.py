@@ -40,7 +40,7 @@ def handle_images():
         p_towards = f"public/img/icons/{p.parts[-1]}"
         click.echo(f"moving {p} -> " + click.style(str(p_towards), "blue"))
         copyfile(p, pathlib.Path(p_towards))
-    for p in pathlib.Path("src/img").glob("*.png"):
+    for p in pathlib.Path("src/img").glob("*.*"):
         p_towards = f"public/img/{p.parts[-1]}"
         click.echo(f"moving {p} -> " + click.style(str(p_towards), "blue"))
         copyfile(p, pathlib.Path(p_towards))
@@ -62,6 +62,12 @@ def handle_category_pages(env, ideas):
             click.echo("created page: " + click.style(f"public/{tag}.html", "blue"))
 
 
+def handle_idea_sites(env, ideas):
+    for idea in ideas:
+        with open(f'public/idea/{idea["id"]}.html', 'w') as f:
+            f.write(env.get_template('index.html').render(ideas=ideas, open_link=idea["id"]))
+            click.echo("created page: " + click.style(f'public/idea/{idea["id"]}.html', "blue"))
+
 @click.command()
 def build():
     """build the website"""
@@ -77,6 +83,7 @@ def build():
     handle_json_api()
     handle_images()
     handle_category_pages(env=env, ideas=ideas)
+    handle_idea_sites(env=env, ideas=ideas)
 
 
 main.add_command(build)

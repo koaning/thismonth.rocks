@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>this month rocks - inspire a cool plan</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="keywords" content="This,Month,Rocks,Inspire,Do,Something">
     <meta name="description" content="This Month Rocks.">
     <meta charset="utf-8">
-    <meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <link rel="icon" type="image/png" href="/img/two-thumbs.png">
-    <link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+    
+<meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<link rel="icon" type="image/png" href="/img/two-thumbs.png">
+<link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+
     <!-- <link href="all.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script async defer data-domain="thismonth.rocks" src="https://plausible.io/js/plausible.js"></script>
@@ -48,7 +49,7 @@
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="vangogh">
+      <p id="p-vangogh" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="vangogh">
         Paint on a Canvas
       </p>
       <div class="px-6 py-4">
@@ -72,18 +73,18 @@
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-        </svg>
-        <span class="text-sm">Esc</span>
-    </div>
-
-    <div class="modal-content text-left px-6">
-      <div class="flex items-center">
-          <img class="p-6" width=100 src="/img/icons/vangogh.svg">
-          <span class="sm:text-lg md:text-4xl font-bold">Paint on a Canvas</span>
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/vangogh.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Paint on a Canvas</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('vangogh')">
+            <span id="t-vangogh" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs sm:text-base">
@@ -96,7 +97,6 @@
         </button>
         <br><br>
       </div>
-
     </div>
 </div>
 
@@ -111,38 +111,70 @@
       toggleModal()
     })
   }
+  const overlay = document.querySelector('.modal-overlay')
+  overlay.addEventListener('click', toggleModal)
 
- const overlay = document.querySelector('.modal-overlay')
- overlay.addEventListener('click', toggleModal)
+  var closemodal = document.querySelectorAll('.modal-close')
+  for (var i = 0; i < closemodal.length; i++) {
+    closemodal[i].addEventListener('click', toggleModal)
+  }
 
- var closemodal = document.querySelectorAll('.modal-close')
- for (var i = 0; i < closemodal.length; i++) {
-   closemodal[i].addEventListener('click', toggleModal)
- }
+  document.onkeydown = function(evt) {
+    evt = evt || window.event
+    var isEscape = false
+    if ("key" in evt) {
+      isEscape = (evt.key === "Escape" || evt.key === "Esc")
+    } else {
+      isEscape = (evt.keyCode === 27)
+    }
+    if (isEscape && document.body.classList.contains('modal-active')) {
+      toggleModal()
+    }
+  }
 
- document.onkeydown = function(evt) {
-   evt = evt || window.event
-   var isEscape = false
-   if ("key" in evt) {
-     isEscape = (evt.key === "Escape" || evt.key === "Esc")
-   } else {
-     isEscape = (evt.keyCode === 27)
-   }
-   if (isEscape && document.body.classList.contains('modal-active')) {
-     toggleModal()
-   }
- }
+  function toggleModal () {
+    if(!selectedModalTargetId) {
+      return
+    }
+    const body = document.querySelector('body')
+    const modal = document.getElementById(selectedModalTargetId)
+    modal.classList.toggle('opacity-0')
+    modal.classList.toggle('pointer-events-none')
+    body.classList.toggle('modal-active')
+  }
 
- function toggleModal () {
-   if(!selectedModalTargetId) {
-     return
-   }
-   const body = document.querySelector('body')
-   const modal = document.getElementById(selectedModalTargetId)
-   modal.classList.toggle('opacity-0')
-   modal.classList.toggle('pointer-events-none')
-   body.classList.toggle('modal-active')
- }
+  function copylink(id){
+    var url = "https://thismonth.rocks/idea/" + id + ".html";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    console.log(url);
+  }
+
+  const copyToClipboard = str => {
+    var url = "https://thismonth.rocks/idea/" + str + ".html";
+    const el = document.createElement('textarea');  // Create a <textarea> element
+    el.value = url;                                 // Set its value to the string that you want copied
+    el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+    el.style.position = 'absolute';                 
+    el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+    document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+    const selected =            
+      document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+        ? document.getSelection().getRangeAt(0)     // Store selection if found
+        : false;                                    // Mark as false to know no selection existed before
+    el.select();                                    // Select the <textarea> content
+    document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+    document.body.removeChild(el);                  // Remove the <textarea> element
+    if (selected) {                                 // If a selection existed before copying
+      document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+      document.getSelection().addRange(selected);   // Restore the original selection
+    }
+    document.getElementById("t-" + str).innerHTML = "URL copied to clipboard."
+  };
+
+ 
 </script>
 </div>
 </div>
