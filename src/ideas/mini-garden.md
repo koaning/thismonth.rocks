@@ -1,5 +1,5 @@
 ---
-icon: minigarden.svg
+icon: mini-garden.svg
 name: Mini Garden
 short: Help something grow and get tasty snacks or herbs at the end of it! Plant a few herbs or some flowers to sit on your kitchen windowsill. 
 tags:

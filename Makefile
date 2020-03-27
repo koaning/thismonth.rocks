@@ -12,3 +12,8 @@ website:
 
 clean:
 	rm -rm public/*
+
+deploy: website
+	git add . 
+	git commit -m moar-stuff 
+	git push origin master
