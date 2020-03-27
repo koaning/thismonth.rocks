@@ -10,4 +10,8 @@ You can go completely pro on this can get something like the [ikea vaxer](https:
 
 <br>
 
-You can use a leftover peanutbutter jar or an old mug as a place to grow the greens. Put some dirt in it, make sure that it receives water. Here's a video on how to grow [an infinite amount of basil](https://www.youtube.com/watch?v=byoEBdVoVpM). 
+You can use a leftover peanutbutter jar or an old mug as a place to grow the greens. Put a little bit of soil in it, put in a few seeds and make sure that it receives water. 
+
+<br> 
+
+Here's a video on how to grow [an infinite amount of basil](https://www.youtube.com/watch?v=byoEBdVoVpM) from a single plant. 
