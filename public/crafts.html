@@ -282,15 +282,6 @@
     body.classList.toggle('modal-active')
   }
 
-  function copylink(id){
-    var url = "https://thismonth.rocks/idea/" + id + ".html";
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
-    console.log(url);
-  }
-
   const copyToClipboard = str => {
     var url = "https://thismonth.rocks/idea/" + str + ".html";
     const el = document.createElement('textarea');  // Create a <textarea> element
