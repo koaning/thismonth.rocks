@@ -1,12 +1,29 @@
 {% extends "base.html" %}
 
+{% block title %}
+  {% if open_link | default(False) %}
+    {{open_link}} this month
+  {% else %}
+    this month rocks - inspire a cool plan
+  {% endif %}
+{% endblock %}
+
 {% block meta %}
-<meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<link rel="icon" type="image/png" href="/img/two-thumbs.png">
-<link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+  {% if open_link | default(False) %}
+    <meta property="og:image" content="https://thismonth.rocks/img/icon/{{ open_link }}.svg">
+    <meta property="og:image:type" content="image/svg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <link rel="icon" type="image/png" href="/img/icon/{{ open_link }}.svg">
+    <link rel="shortcut icon" type="image/png" href="/img/icon/{{ open_link }}.svg">
+  {% else %}
+    <meta property="og:image" content="https://thismonth.rocks/img/two-thumbs.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <link rel="icon" type="image/png" href="/img/two-thumbs.png">
+    <link rel="shortcut icon" type="image/png" href="/img/two-thumbs.png">
+  {% endif %}
 {% endblock %}
 
 {% block content %}
