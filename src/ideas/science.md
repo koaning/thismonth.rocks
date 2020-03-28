@@ -7,7 +7,9 @@ tags:
 ---
 
 One way in which you can make a contribution is by labelling. You can help
-[mozilla](mozilla.org/) to teach robots [how to speak](https://voice.mozilla.org/en).
+[mozilla](mozilla.org/) to teach robots [how to speak](https://voice.mozilla.org/en) or
+[openstreetmaps](https://www.openstreetmap.org/#map=8/52.154/5.295) 
+by helping them label [your neighborhood](https://wiki.openstreetmap.org/wiki/StreetComplete).
 
 <br>
 
