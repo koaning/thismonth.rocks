@@ -4,6 +4,7 @@ name: Contribute to Science
 short: There are many ways that you can contribute from home.
 tags:
 - mind
+- tech
 ---
 
 One way in which you can make a contribution is by labelling. You can help

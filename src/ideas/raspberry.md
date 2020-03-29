@@ -4,6 +4,7 @@ name: Play with Sensors
 short: Buy a raspberry pi with some sensors and start measuring the world.
 tags:
 - mind
+- tech
 ---
 
 Raspberry Pi is a great invention and there's a lovely community.
