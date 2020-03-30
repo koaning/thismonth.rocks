@@ -8,3 +8,8 @@ tags:
 ---
 
 If you're looking for a source of inspiration, check out [this blog](https://arbitrarilyclose.com/home/). In particular, the japanese technique of hitomezashi is [a highlight](https://arbitrarilyclose.com/2020/03/29/mathartchallenge-day-14-hitomezashi-stitching-suggested-by-katherine-seaton/).
+
+<br>
+
+Another good source can be the [doodling in maths class](https://www.youtube.com/playlist?list=PLF7CBA45AEBAD18B8)
+youtube playlist.
