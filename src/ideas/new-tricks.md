@@ -5,4 +5,5 @@ short: Teach your pet new tricks this month! You might eventry to teach your cat
   new trick.
 tags:
 - family
+- pets
 ---
