@@ -6,7 +6,7 @@ tags:
 - crafts
 ---
 
-Odds are that you've got a lazer cutter nearby. They can cut plastics, wood and carton for you in whatever shape you'd like. If you want a custom shape for your box you could check out [makercase](https://www.makercase.com/#/).
+Odds are that you've got a lazer cutter nearby. They can cut plastics, wood and carton for you in whatever shape you'd like. If you want a custom shape for your box you could check out [makercase](https://www.makercase.com/#/). Or [trispace](http://trispace.cc/).
 
 <br>
 
