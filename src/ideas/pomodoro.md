@@ -11,7 +11,8 @@ Pomodoro is a method of working in 25 minute segments.
 <br> 
 
 It makes you aware of the time in a day and it prevents you from getting stuck in
-a rabbit hole. There's a great video on [youtube](https://www.youtube.com/watch?v=VFW3Ld7JO0w).
+a rabbit hole. There's a great video on [youtube](https://www.youtube.com/watch?v=VFW3Ld7JO0w) and
+a small course can be found [here](https://calmcode.io/pomodoro/introduction.html).
 
 <br> 
 
