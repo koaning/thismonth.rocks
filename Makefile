@@ -1,5 +1,5 @@
 install:
-	pip install -r requirements
+	pip install -r requirements.txt
 	npm install http-server purgecss@1.4.2 uglifycss
 
 css: website
