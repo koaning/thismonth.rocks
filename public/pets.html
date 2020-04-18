@@ -237,6 +237,84 @@
     </div>
 </div>
 
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+    a{
+      font-weight: 700;
+    }
+  </style>
+  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
+    <div class="px-6 py-4">
+      <p id="p-pet-fame" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pet-fame">
+        Pet Fame
+      </p>
+      <div class="px-6 py-4">
+        
+          <a href="/digital.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
+          </a>
+        
+          <a href="/pets.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#pets</span>
+          </a>
+        
+      </div>
+      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pet-fame" src="/img/icons/pet-fame.svg">
+      <p class="text-gray-600 text-base lg:visible">
+        Make an effort to turn your pet into a star on the internet!
+      </p>
+    </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pet-fame">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/pet-fame.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Pet Fame</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('pet-fame')">
+            <span id="t-pet-fame" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs md:text-base">
+        <p>It's a great excuse to learn some photoshop skills or to learn
+how to do some digital video editing. There's some great examples
+on the internet; there's a couple who demonstrates how to use a 
+<a href="https://www.youtube.com/channel/UCpLQXR116cLVUa1LRY8KS4w">green screen with a cat</a>, a collection of 
+<a href="https://imgur.com/gallery/dl0WxHv">photoshopped cat faces</a>, 
+<a href="https://www.boredpanda.com/dogs-food-funny-photoshop-edits-dogs-infood/">dogs that look like food</a>, an owner
+masking his dog <a href="https://www.boredpanda.com/dog-photoshopped-famous-photos-shiba-inu/">unto famous people</a> or this man who
+turns his dog into a <a href="https://www.boredpanda.com/giant-dog-photoshop-adventures-juji-christopher-cline/">giant</a>. 
+You can also keep it simple and just
+record <a href="https://www.youtube.com/watch?v=2XID_W4neJo">how animals react to objects</a>.</p>
+<p>There's many ways to make your pets famous. Just make sure that 
+whatever you do with your pets, they enjoy it too.</p>
+
+        
+          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+</div>
+
 
 <script>
   var openmodal = document.querySelectorAll('.modal-open')
