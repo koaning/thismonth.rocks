@@ -22,6 +22,7 @@ in knowing more behind the theory behind it you might appreciate
 reading [the book](https://francescocirillo.com/products/the-pomodoro-technique-book-us-edition) 
 written by the creator.
 
+Alternatively, you can use this free [website](https://tomato-timer.com/) to set a timer. 
 <br>
 
 If possible, consider buying the book from a local book-store.
