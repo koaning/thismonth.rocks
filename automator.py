@@ -12,7 +12,7 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader, Markup
 
 @click.group()
 def main():
-    """This cli is oke, okeh?"""
+    """This cli is okeh, okeh?"""
     pass
 
 
