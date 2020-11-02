@@ -4,7 +4,7 @@
 <head>
     <title>
   
-    podcast this month
+    books this month
   
 </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -3501,8 +3501,8 @@ You can get these digitally too over at <a href="https://www.asterix.com/en/the-
   </style>
   <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
     <div class="px-6 py-4">
-      <p id="p-color-code" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="color-code">
-        Color Code
+      <p id="p-books" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="books">
+        Color code books
       </p>
       <div class="px-6 py-4">
         
@@ -3510,14 +3510,22 @@ You can get these digitally too over at <a href="https://www.asterix.com/en/the-
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
           </a>
         
+          <a href="/books.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#books</span>
+          </a>
+        
+          <a href="/color.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#color</span>
+          </a>
+        
       </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="color-code" src="/img/icons/color-code.svg">
+      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="books" src="/img/icons/books.svg">
       <p class="text-gray-600 text-base lg:visible">
-        Sort your living space by color, starting with your bookshelves. It&#39;ll make a difference!
+        Sort your bookshelves by color. So your bookshelves are so much better to look at. You can try it with different designs white to black, or go crazy by going for a rainbow.
       </p>
     </div>
   </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="color-code">
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="books">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     
     <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
@@ -3529,17 +3537,14 @@ You can get these digitally too over at <a href="https://www.asterix.com/en/the-
       </div>
       <div class="modal-content text-left px-6">
         <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/color-code.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Color Code</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('color-code')">
-            <span id="t-color-code" class="ml-4 text-xs sm:text-base"></span>
+            <img class="p-6" width=100 src="/img/icons/books.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Color code books</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('books')">
+            <span id="t-books" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
       <div class="px-8 pb-4 text-xs md:text-base">
-        <p>You can try it with different designs white to black, or go crazy by going for a rainbow. The effects can be <a href="https://www.google.com/search?q=bookshelf+sorted+by+color&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjO9uqrrOPsAhXQqaQKHSvMC3YQ_AUoAXoECBYQAw&amp;biw=963&amp;bih=1070&amp;dpr=1.25">amazing</a>. It doesn't just have to be books though. Adding order to your selves can cause a lot of calm. A fun example is <a href="https://www.youtube.com/watch?v=uFHqDcu88bg">this youtuber</a> who is sorting nail polish.</p>
-
-        
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
           Close
@@ -4576,7 +4581,7 @@ how to do some digital video editing and there's many ways to make your pets fam
   };
 
  
-    document.getElementById('p-podcast').click();
+    document.getElementById('p-books').click();
  
 </script>
 </div>
