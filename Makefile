@@ -23,4 +23,4 @@ serve: website
 
 netlify:
 	pip install -r requirements.txt
-	python automator.py build
+	python3 automator.py build
