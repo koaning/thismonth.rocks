@@ -1,6 +1,6 @@
 click==7.1.1
 pyyaml==5.3
-Jinja2==2.11.1
+Jinja2==2.11.3
 python-frontmatter==0.5.0
 mistune==2.0.0a2
 Markdown==3.2.1
