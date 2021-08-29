@@ -133,3 +133,4 @@ dmypy.json
 .vscode
 
 node_modules
+public/**/*.html
