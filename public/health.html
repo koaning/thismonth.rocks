@@ -35,400 +35,29 @@
         </div>
     </div>
     <div id="content" class="relative overflow-hidden mb-8">
-<div class="flex flex-wrap">
+<style>
+  .modal {
+    transition: opacity 0.25s ease;
+  }
+  body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+  }
 
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
+  a{
+    font-weight: 700;
+  }
+</style>
+<ul role="list" class="grid p-6 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 bg-gray-300">
 
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-breathe" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="breathe">
-        Breathing Exercises
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="breathe" src="/img/icons/breathe.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Buy a straw and breathe through it. It gives youa calm heart rate. These exercises really have an effect.
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="breathe">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/breathe.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Breathing Exercises</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('breathe')">
-            <span id="t-breathe" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        <p>Check out this <a href="https://www.youtube.com/watch?v=_QTJOAI0UoU&amp;feature=youtu.be">12 minute TED Talk by Lucas Rockwood</a> breaking down different types of breathing exercises.</p>
-
-        
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-bread" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="bread">
-        Bake Bread
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="bread" src="/img/icons/bread.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        It can be very rewarding. It&#39;ll make your kitchen smell nice too!
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="bread">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/bread.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Bake Bread</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('bread')">
-            <span id="t-bread" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-running" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="running">
-        Running Competition
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="running" src="/img/icons/running.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        There&#39;s the Santa Run. But also the Utrecht one.
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="running">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/running.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Running Competition</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('running')">
-            <span id="t-running" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-pushup" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pushup">
-        Train Pushups
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pushup" src="/img/icons/pushup.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        How many can you do right now? Can you triple it by the end of the month?
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pushup">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/pushup.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Train Pushups</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('pushup')">
-            <span id="t-pushup" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        <p>One of the best exercises to get fit and develop good physique to do is pushups. If you have never done a single push or have struggled with the right posture, check out this <a href="https://youtu.be/LhAnb8b_bcE">video</a>.</p>
-
-        
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-skate" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="skate">
-        Swap Transport
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="skate" src="/img/icons/skate.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Try out biking, public transport, carpooling or skating instead of your usual mode of transport.
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="skate">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/skate.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Swap Transport</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('skate')">
-            <span id="t-skate" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        <p>It can be a boon to your health but also a great way to save money.</p>
-
-        
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-meditate" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="meditate">
-        Meditate
-      </p>
-      <div class="px-6 py-4">
-        
-          <a href="/mind.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
-          </a>
-        
-          <a href="/health.html">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
-          </a>
-        
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="meditate" src="/img/icons/meditate.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        You&#39;ve probably told yourself you should.Give it a chance this month!
-      </p>
-    </div>
-  </div>
-  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="meditate">
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    
-    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-          <span class="text-sm">Esc</span>
-      </div>
-      <div class="modal-content text-left px-6">
-        <div class="flex items-center">
-            <img class="p-6" width=100 src="/img/icons/meditate.svg">
-            <span class="sm:text-lg md:text-4xl font-bold">Meditate</span>
-            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('meditate')">
-            <span id="t-meditate" class="ml-4 text-xs sm:text-base"></span>
-          </div>
-      </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
-        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
-        
-        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
-          Close
-        </button>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-yoga" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="yoga">
-        Yoga
-      </p>
-      <div class="px-6 py-4">
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="yoga" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/yoga.svg" alt="yoga.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="yoga" src="/img/icons/yoga.svg"> -->
+    <h3 id="p-yoga" data-toggle="modal" data-target="yoga" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Yoga</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">It&#39;s easy to get started with and could be a great stress relief. Try it.</dd>
+      <dd class="mt-3">
         
           <a href="/home.html">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#home</span>
@@ -438,12 +67,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
           </a>
         
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="yoga" src="/img/icons/yoga.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        It&#39;s easy to get started with and could be a great stress relief. Try it.
-      </p>
-    </div>
+      </dd>
+    </dl>
   </div>
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="yoga">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -463,7 +88,7 @@
             <span id="t-yoga" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
         There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
@@ -472,8 +97,299 @@
         <br><br>
       </div>
     </div>
-</div>
+  </div>
+</li>
 
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="pushup" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/pushup.svg" alt="pushup.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pushup" src="/img/icons/pushup.svg"> -->
+    <h3 id="p-pushup" data-toggle="modal" data-target="pushup" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Train Pushups</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">How many can you do right now? Can you triple it by the end of the month?</dd>
+      <dd class="mt-3">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pushup">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/pushup.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Train Pushups</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('pushup')">
+            <span id="t-pushup" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        <p>One of the best exercises to get fit and develop good physique to do is pushups. If you have never done a single push or have struggled with the right posture, check out this <a href="https://youtu.be/LhAnb8b_bcE">video</a>.</p>
+
+        
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="breathe" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/breathe.svg" alt="breathe.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="breathe" src="/img/icons/breathe.svg"> -->
+    <h3 id="p-breathe" data-toggle="modal" data-target="breathe" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Breathing Exercises</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Buy a straw and breathe through it. It gives youa calm heart rate. These exercises really have an effect.</dd>
+      <dd class="mt-3">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="breathe">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/breathe.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Breathing Exercises</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('breathe')">
+            <span id="t-breathe" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        <p>Check out this <a href="https://www.youtube.com/watch?v=_QTJOAI0UoU&amp;feature=youtu.be">12 minute TED Talk by Lucas Rockwood</a> breaking down different types of breathing exercises.</p>
+
+        
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="meditate" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/meditate.svg" alt="meditate.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="meditate" src="/img/icons/meditate.svg"> -->
+    <h3 id="p-meditate" data-toggle="modal" data-target="meditate" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Meditate</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">You&#39;ve probably told yourself you should.Give it a chance this month!</dd>
+      <dd class="mt-3">
+        
+          <a href="/mind.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#mind</span>
+          </a>
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="meditate">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/meditate.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Meditate</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('meditate')">
+            <span id="t-meditate" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="running" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/running.svg" alt="running.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="running" src="/img/icons/running.svg"> -->
+    <h3 id="p-running" data-toggle="modal" data-target="running" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Running Competition</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">There&#39;s the Santa Run. But also the Utrecht one.</dd>
+      <dd class="mt-3">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="running">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/running.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Running Competition</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('running')">
+            <span id="t-running" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="bread" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/bread.svg" alt="bread.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="bread" src="/img/icons/bread.svg"> -->
+    <h3 id="p-bread" data-toggle="modal" data-target="bread" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Bake Bread</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">It can be very rewarding. It&#39;ll make your kitchen smell nice too!</dd>
+      <dd class="mt-3">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="bread">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/bread.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Bake Bread</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('bread')">
+            <span id="t-bread" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="skate" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/skate.svg" alt="skate.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="skate" src="/img/icons/skate.svg"> -->
+    <h3 id="p-skate" data-toggle="modal" data-target="skate" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Swap Transport</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Try out biking, public transport, carpooling or skating instead of your usual mode of transport.</dd>
+      <dd class="mt-3">
+        
+          <a href="/health.html">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#health</span>
+          </a>
+        
+      </dd>
+    </dl>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="skate">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container max-w-screen-md bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">Esc</span>
+      </div>
+      <div class="modal-content text-left px-6">
+        <div class="flex items-center">
+            <img class="p-6" width=100 src="/img/icons/skate.svg">
+            <span class="sm:text-lg md:text-4xl font-bold">Swap Transport</span>
+            <img class="cursor-pointer ml-2 pull-right" width=35 src="/img/share.svg" onclick="copyToClipboard('skate')">
+            <span id="t-skate" class="ml-4 text-xs sm:text-base"></span>
+          </div>
+      </div>
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
+        <p>It can be a boon to your health but also a great way to save money.</p>
+
+        
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+        
+        <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
+          Close
+        </button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</li>
+
+</ul>
 
 <script>
   var openmodal = document.querySelectorAll('.modal-open')
@@ -518,7 +434,7 @@
   }
 
   const copyToClipboard = str => {
-    var url = "https://thismonth.rocks/idea/" + str + ".html#p-" + str;
+    var url = "/idea/" + str + ".html#p-" + str;
     const el = document.createElement('textarea');  // Create a <textarea> element
     el.value = url;                                 // Set its value to the string that you want copied
     el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
@@ -545,7 +461,7 @@
 </div>
     <div class="flex flex-wrap">
         <div class="w-1/1 rounded overflow-hidden p-4">
-            <p>Made with love by <a class="font-bold" href="https://koaning.io">koaning</a>. Find me on <a class="font-bold" href="https://twitter.com/fishnets88">twitter</a>.</p>
+            <p>Made with love by <a class="font-bold" href="https://koaning.io">koaning</a> on behalf of <a href="https://calmcode.io" class="font-bold">calmcode</a>. Find me on <a class="font-bold" href="https://twitter.com/fishnets88">twitter</a>.</p>
             <p>Generated with <a href="https://www.netlify.com/" class="font-bold">netlify</a>, <a href="https://tailwindcss.com/" class="font-bold">tailwind</a> and <a href="https://jinja.palletsprojects.com/en/2.11.x/" class="font-bold">jinja</a>. Icons from <a href="https://thenounproject.com/" class="font-bold">the nounproject</a>.</p>
         </div>
     </div>

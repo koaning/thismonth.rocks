@@ -35,27 +35,29 @@
         </div>
     </div>
     <div id="content" class="relative overflow-hidden mb-8">
-<div class="flex flex-wrap">
+<style>
+  .modal {
+    transition: opacity 0.25s ease;
+  }
+  body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+  }
 
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
+  a{
+    font-weight: 700;
+  }
+</style>
+<ul role="list" class="grid p-6 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 bg-gray-300">
 
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-cat-furniture" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="cat-furniture">
-        Cat Furniture
-      </p>
-      <div class="px-6 py-4">
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="cat-furniture" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/cat-furniture.svg" alt="cat-furniture.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="cat-furniture" src="/img/icons/cat-furniture.svg"> -->
+    <h3 id="p-cat-furniture" data-toggle="modal" data-target="cat-furniture" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Cat Furniture</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Give your feline something that it can sink nails into.</dd>
+      <dd class="mt-3">
         
           <a href="/pets.html">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#pets</span>
@@ -65,12 +67,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
           </a>
         
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="cat-furniture" src="/img/icons/cat-furniture.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Give your feline something that it can sink nails into.
-      </p>
-    </div>
+      </dd>
+    </dl>
   </div>
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="cat-furniture">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -90,11 +88,11 @@
             <span id="t-cat-furniture" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
         <p>It can be a great way to recycle cardbord boxes but it is also a great crafting exercise. There's <a href="https://www.instructables.com/id/Cardboard-Cat-Igloo-House/">igloo houses</a> you could make but also <a href="https://www.instructables.com/id/Sturdy-Cat-Scratching-Post/">proper scratching posts</a> or <a href="https://www.instructables.com/id/Cat-Scratching-Pad/">pad</a>.</p>
 
         
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
           Close
@@ -102,27 +100,17 @@
         <br><br>
       </div>
     </div>
-</div>
+  </div>
+</li>
 
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-new-tricks" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="new-tricks">
-        New Tricks
-      </p>
-      <div class="px-6 py-4">
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="new-tricks" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/new-tricks.svg" alt="new-tricks.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="new-tricks" src="/img/icons/new-tricks.svg"> -->
+    <h3 id="p-new-tricks" data-toggle="modal" data-target="new-tricks" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">New Tricks</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Teach your pet new tricks this month! You might eventry to teach your cat a new trick.</dd>
+      <dd class="mt-3">
         
           <a href="/family.html">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#family</span>
@@ -132,12 +120,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#pets</span>
           </a>
         
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="new-tricks" src="/img/icons/new-tricks.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Teach your pet new tricks this month! You might eventry to teach your cat a new trick.
-      </p>
-    </div>
+      </dd>
+    </dl>
   </div>
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="new-tricks">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -157,7 +141,7 @@
             <span id="t-new-tricks" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
         There is no appendix. Consider adding it to <a href='https://github.com/koaning/thismonth.rocks'>github</a>.
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
@@ -166,27 +150,17 @@
         <br><br>
       </div>
     </div>
-</div>
+  </div>
+</li>
 
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-pet-toys" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pet-toys">
-        Pet Toys
-      </p>
-      <div class="px-6 py-4">
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="pet-toys" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/pet-toys.svg" alt="pet-toys.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pet-toys" src="/img/icons/pet-toys.svg"> -->
+    <h3 id="p-pet-toys" data-toggle="modal" data-target="pet-toys" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Pet Toys</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Make your own toys for your own pets. Fun for you, fun for them.</dd>
+      <dd class="mt-3">
         
           <a href="/pets.html">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#pets</span>
@@ -196,12 +170,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#crafts</span>
           </a>
         
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pet-toys" src="/img/icons/pet-toys.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Make your own toys for your own pets. Fun for you, fun for them.
-      </p>
-    </div>
+      </dd>
+    </dl>
   </div>
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pet-toys">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -221,13 +191,13 @@
             <span id="t-pet-toys" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
         <p>Cats love catnip and it's pretty easy to make <a href="https://www.instructables.com/id/Easy-Catnip-Dumpling-Toy/">toy for it</a>.</p>
 <br>
 <p>Dogs may need something sturdier but a <a href="https://www.instructables.com/id/Water-Bottle-Dog-Toy/">sock and a water bottle</a> can go a long way.</p>
 
         
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
           Close
@@ -235,27 +205,17 @@
         <br><br>
       </div>
     </div>
-</div>
+  </div>
+</li>
 
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-
-    a{
-      font-weight: 700;
-    }
-  </style>
-  <div class="sm:w1/1 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden p-1">
-    <div class="px-6 py-4">
-      <p id="p-pet-fame" class="modal-open cursor-pointer font-bold bg-gray-100 sm:text-xl border-b-2 border-gray-700 lg:text-l mb-2 pt-2 pb-2 text-center" data-toggle="modal" data-target="pet-fame">
-        Pet Fame
-      </p>
-      <div class="px-6 py-4">
+<li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+  <div class="flex-1 flex flex-col p-8">
+    <img data-toggle="modal" data-target="pet-fame" class="modal-open cursor-pointer w-18 h-18 flex-shrink-0 mx-auto" src="/img/icons/pet-fame.svg" alt="pet-fame.svg">
+    <!-- <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pet-fame" src="/img/icons/pet-fame.svg"> -->
+    <h3 id="p-pet-fame" data-toggle="modal" data-target="pet-fame" class="modal-open cursor-pointer mt-6 text-gray-900 text-lg font-medium">Pet Fame</h3>
+    <dl class="mt-1 flex-grow flex flex-col justify-between">
+      <dd class="text-gray-600 text-sm text-left">Make an effort to turn your pet into a star on the internet!</dd>
+      <dd class="mt-3">
         
           <a href="/digital.html">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#digital</span>
@@ -265,12 +225,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">#pets</span>
           </a>
         
-      </div>
-      <img class="cursor-pointer modal-open w-full p-8 sm:p-8 md:p-8 lg:p-8" data-toggle="modal" data-target="pet-fame" src="/img/icons/pet-fame.svg">
-      <p class="text-gray-600 text-base lg:visible">
-        Make an effort to turn your pet into a star on the internet!
-      </p>
-    </div>
+      </dd>
+    </dl>
   </div>
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="pet-fame">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -290,7 +246,7 @@
             <span id="t-pet-fame" class="ml-4 text-xs sm:text-base"></span>
           </div>
       </div>
-      <div class="px-8 pb-4 text-xs md:text-base">
+      <div class="px-8 pb-4 text-xs text-left md:text-base text-gray-900">
         <p>There's some great examples
 on the internet; there's a couple who demonstrates how to use a 
 <a href="https://www.youtube.com/channel/UCpLQXR116cLVUa1LRY8KS4w">green screen with a cat</a>, a collection of 
@@ -305,7 +261,7 @@ record <a href="https://www.youtube.com/watch?v=2XID_W4neJo">how animals react t
 how to do some digital video editing and there's many ways to make your pets famous. Just make sure that whatever you do with your pets, they enjoy it too.</p>
 
         
-          <span class="text-gray-600 text-xs mt-8 text-right">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
+          <span class="text-gray-600 text-xs">If you want to commit to this idea, consider reminding yourself via <a href="https://dearme.email">dearme.email</a>.</span>
         
         <button class="float-right modal-close bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-2 p-2 px-4 border border-gray-400 rounded shadow">
           Close
@@ -313,8 +269,10 @@ how to do some digital video editing and there's many ways to make your pets fam
         <br><br>
       </div>
     </div>
-</div>
+  </div>
+</li>
 
+</ul>
 
 <script>
   var openmodal = document.querySelectorAll('.modal-open')
@@ -359,7 +317,7 @@ how to do some digital video editing and there's many ways to make your pets fam
   }
 
   const copyToClipboard = str => {
-    var url = "https://thismonth.rocks/idea/" + str + ".html#p-" + str;
+    var url = "/idea/" + str + ".html#p-" + str;
     const el = document.createElement('textarea');  // Create a <textarea> element
     el.value = url;                                 // Set its value to the string that you want copied
     el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
@@ -386,7 +344,7 @@ how to do some digital video editing and there's many ways to make your pets fam
 </div>
     <div class="flex flex-wrap">
         <div class="w-1/1 rounded overflow-hidden p-4">
-            <p>Made with love by <a class="font-bold" href="https://koaning.io">koaning</a>. Find me on <a class="font-bold" href="https://twitter.com/fishnets88">twitter</a>.</p>
+            <p>Made with love by <a class="font-bold" href="https://koaning.io">koaning</a> on behalf of <a href="https://calmcode.io" class="font-bold">calmcode</a>. Find me on <a class="font-bold" href="https://twitter.com/fishnets88">twitter</a>.</p>
             <p>Generated with <a href="https://www.netlify.com/" class="font-bold">netlify</a>, <a href="https://tailwindcss.com/" class="font-bold">tailwind</a> and <a href="https://jinja.palletsprojects.com/en/2.11.x/" class="font-bold">jinja</a>. Icons from <a href="https://thenounproject.com/" class="font-bold">the nounproject</a>.</p>
         </div>
     </div>
