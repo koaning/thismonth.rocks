@@ -20,3 +20,7 @@ deploy: website
 
 serve: website
 	python -m http.server 8000 --directory public
+
+netlify:
+	pip install -r requirements.txt
+	python automator.py build
